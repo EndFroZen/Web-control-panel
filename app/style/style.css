@@ -1,0 +1,44 @@
+.deepback{
+    display: flex;
+    justify-content: center; /* จัดตำแหน่ง items ให้อยู่กลางในแนวนอน */
+    align-items: center;
+    height: 100vh;
+}
+.contriner{
+    display: flex;
+    width: 1080px;
+    height: 600px;
+    background-color: #302F2F;
+}
+.player1,.player2{
+    display: flex;            
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    background-color: #9E8787;
+}
+.player1{
+    margin-right: 80px;
+}
+.profileplayer1,.profileplayer2{
+    margin-bottom: 14px;
+    width: 305px;
+    height: 305px;
+    object-fit: cover;
+    border-radius: 250px;
+}
+.dataplayer1,.dataplayer2{
+    width: 463px;
+    height: 229px;
+    background-color: #D9D9D9;
+    justify-items: center;
+    
+}
+.imggithub,.imgfacebook,.imgteam{
+    width: 53px;
+    height: 53px;
+    border-radius: 250px;
+    margin-bottom: 16px;
+}
