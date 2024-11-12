@@ -19,19 +19,15 @@ body{
     
 }
 .datanav{
-    /* border: 2px red solid; */
-    display: flex;
-    flex-direction: row;
-    
-    /* justify-content: space-between; */
-    width:50%;
     margin-right: 2.5rem;
-    justify-items: end;
-    text-align: left;
 
 }
 li{
     margin-left: 3rem;
+}
+.jook{
+    display: flex;
+    flex-direction: row;
 }
 .nameweb{
     margin-left: 2.5rem;
@@ -103,6 +99,7 @@ img{
 }
 .textbox1{
     font-size: 40PX;
+    margin-bottom: 2.5rem;
 }
 .box1{
     display: flex;

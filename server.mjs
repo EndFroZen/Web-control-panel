@@ -48,6 +48,8 @@ const server = createServer(async (req,res)=>{
       res.writeHead(500, { 'Content-Type': 'text/plain' });
       res.end('Error loading css file');
     }
+  }else{
+    console.log("Build finish")
   }
 })
 
