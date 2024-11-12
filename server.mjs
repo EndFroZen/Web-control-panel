@@ -2,7 +2,7 @@
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import path from "node:path";
-import { console } from 'node:inspector';
+
 const filename = path.join("app")
 
 // html path
@@ -17,9 +17,18 @@ const server = createServer(async (req,res)=>{
       res.writeHead(500, { 'Content-Type': 'text/plain' });
       res.end('Error loading HTML file');
     }
-  }else if (reqPath === '/home/about' ) {
+  }else if (reqPath === '/about' ) {
     try {
       const html_data = await readFile(path.join(filename, 'page', 'aboute.html'));
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.end(html_data);
+    } catch (error) {
+      res.writeHead(500, { 'Content-Type': 'text/plain' });
+      res.end('Error loading HTML file');
+    }
+  }else if (reqPath === '/team' ) {
+    try {
+      const html_data = await readFile(path.join(filename, 'page', 'team.html'));
       res.writeHead(200, { 'Content-Type': 'text/html' });
       res.end(html_data);
     } catch (error) {
@@ -49,7 +58,8 @@ const server = createServer(async (req,res)=>{
       res.end('Error loading css file');
     }
   }else{
-    console.log("Build finish")
+    const date = new Date();
+    console.log(`"Build finish ${date.toISOString()}"`)
   }
 })
 
