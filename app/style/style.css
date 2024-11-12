@@ -26,7 +26,8 @@ body{
     /* justify-content: space-between; */
     width:50%;
     margin-right: 2.5rem;
-    justify-items: flex-end;
+    justify-items: end;
+    text-align: left;
 
 }
 li{
@@ -90,7 +91,7 @@ img{
 }
 
 .box1,.box2{
-    height: 100%;
+    
     width: 50%;
     /* border: 2px solid red; */
 
@@ -108,7 +109,7 @@ img{
     flex-direction: row;
     justify-items: center;
     justify-content: center;
-    margin-top: 9.5rem;
+    padding-top: 9.5rem;
 }
 a{
     text-decoration: none;
