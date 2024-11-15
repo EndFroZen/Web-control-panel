@@ -5,7 +5,7 @@
 
 
 
-#git comman
+# git comman
       git add . 
       git commit -m "some thing"
       git push -u origin <branch>
